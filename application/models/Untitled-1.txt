@@ -1,0 +1,9 @@
+<?php if($this->session->flashdata('success')); ?>
+    <p style="color:green;"><?= $this->session->flashdata('success'); ?></p>
+<?php endif; ?>
+
+<?php if ($this->session->flashdata('error')); ?>
+    <p style="color;red;"><? = $this->session->flashdata('error'); ?></p>
+<?php emdif; ?>
+
+<?= validation_errors('<p atyle="color;red">', '</p>'); ?>
